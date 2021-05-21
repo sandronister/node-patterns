@@ -2,7 +2,7 @@ const Logger = require("./Logger");
 const Shopper = require("./Shopper");
 const Store = require("./Store");
 
-const logger = new Logger();
+const logger = new Logger().getInstance();
 logger.log("Stating app ...");
 
 const mario = new Shopper("Mario", 5000.4);
